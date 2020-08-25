@@ -1,0 +1,33 @@
+<!-- 
+<div   md-colors="{background: 'myTheme-accent-900-0.43'}">
+    <app-navbar></app-navbar>
+    <div class="form">
+      <form  >
+        <h3 class="heading">Singup</h3>
+          <mat-form-field  color="primary" appearance="outline"   class="example-full-width">
+            <mat-label >Username</mat-label>
+            <input matInput placeholder="name_" type="text" >
+          </mat-form-field>
+  
+          <mat-form-field   color="primary" appearance="outline"  class="example-full-width">
+            <mat-label>password</mat-label>
+            <input matInput placeholder="password" type="password">
+          </mat-form-field>
+
+          <mat-form-field   color="primary" appearance="outline"  class="example-full-width">
+            <mat-label>email</mat-label>
+            <input matInput placeholder="email" type="email" id="email">
+          </mat-form-field>
+          <input  color="primary" class="b" type="submit">
+        </form>
+  -->
+  <div class="hi">
+    <app-navbar></app-navbar>
+  <form class="login" (submit)="signupUser($event)">
+    <label style="font-size: 30px;font-weight: bold;font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;">Sign up</label>
+    <input type="text" placeholder="Username" id="username">
+    <input type="password" placeholder="Password" type="password" id="password">
+    <input type="email" placeholder="Email" id="email">
+    <button type="submit">Login</button>
+  </form>
+</div>

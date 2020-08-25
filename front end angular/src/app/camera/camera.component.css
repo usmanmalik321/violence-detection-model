@@ -1,0 +1,17 @@
+.cont{
+  justify-content: center;
+  margin-left: 250px;
+  margin-right: 320px;
+  align-items: center;
+
+}
+.b1{
+  margin-left: 300px;
+}
+.d1{
+  padding: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}

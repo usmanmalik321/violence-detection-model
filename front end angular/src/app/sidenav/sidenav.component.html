@@ -1,0 +1,29 @@
+<div class="c">
+<mat-toolbar color="primary">
+    <mat-toolbar-row>
+<button type="button" aria-label="Toggle sidenav" mat-fab (click)="drawer.toggle()" color="accent">
+    <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+  </button>
+  <span style="margin-left: 10px;">Violence Detection System</span>
+  <div class="i">
+<button mat-raised-button (click)="logout()" >logout</button>
+  <!-- <mat-icon style="font-size: 25px;">account_circle</mat-icon> -->
+</div>
+</mat-toolbar-row>
+</mat-toolbar>
+<mat-sidenav-container class="example"  >
+<mat-sidenav class="side" #drawer mode="side" opened role="navigation">
+  <mat-nav-list >
+    <a mat-list-item [routerLink]="['camera']">Live Feed</a>
+    <a mat-list-item [routerLink]="['database']">Repository</a>
+  </mat-nav-list>
+</mat-sidenav>
+<mat-sidenav-content>
+  <div *ngIf="u==='http://localhost:4200/admin'" class="am"> 
+    <h1 style="font-family: 'Lobster', cursive; padding-top: 40vh; font-size: xx-large;">Select either option from the side-navigation bar</h1>
+    
+</div>
+  <ng-content></ng-content>
+</mat-sidenav-content>
+</mat-sidenav-container>
+</div>

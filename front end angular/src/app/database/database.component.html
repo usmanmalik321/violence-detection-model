@@ -1,0 +1,28 @@
+<div class="d1" *ngIf="record.length===0">
+  <mat-spinner></mat-spinner>
+</div>
+<div class="dabba">
+<mat-card class="e-card"  *ngFor="let r of record;let i=index">
+  <mat-card-header>
+    <div mat-card-avatar class="example-header-image"><span style="font-size: medium;color: aliceblue;">{{i+1}}</span></div>
+    <mat-card-title>Culprits Indentified: {{r.culprits}}</mat-card-title>
+    <mat-card-subtitle>Video</mat-card-subtitle>
+  </mat-card-header>
+<div style="height: 350px; margin: 10px;">
+  <mat-video src="http://localhost:3000/users/record/stream/{{r._id}}" color="accent" [overlay]="false"></mat-video>
+</div>
+  <mat-card-content>
+   <ul>
+     <li>
+       {{r.date}}
+     </li>
+     <li>
+       {{r.time}}
+     </li>
+   </ul>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-button color="accent" (click)="opensheet(r.image)">View Images</button>
+  </mat-card-actions>
+</mat-card>
+</div>

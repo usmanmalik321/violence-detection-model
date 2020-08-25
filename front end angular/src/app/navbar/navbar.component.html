@@ -1,0 +1,9 @@
+<div class="makeItCenter">
+<mat-toolbar color="primary" class="mat-elevtion-z12">
+    <span><mat-icon>all_out</mat-icon>Violence Detection System</span>
+    <div class="space"></div>
+   <button mat-button routerLink='about'>About Us</button>
+   <button *ngIf="ss==='http://localhost:4200/'" mat-button routerLink='signup'>Sign-up</button>
+   <button  *ngIf="ss==='http://localhost:4200/signup'" mat-button routerLink=''>Sign-in</button>
+ </mat-toolbar>
+</div>

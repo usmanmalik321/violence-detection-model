@@ -1,0 +1,15 @@
+.dabba{
+    display: flex;
+
+}
+.i{
+   padding: 10px;
+}
+.example-header-image {
+    margin:5px;
+    display: flex;
+    background-color:#2d2b2a;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+  }

@@ -1,0 +1,9 @@
+.makeItCenter{
+    flex:0.2;
+    background-color: red;
+    
+}
+.space{
+    flex: 1 1 auto;
+    
+}
