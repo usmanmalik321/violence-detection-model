@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+.example {
+  height: calc(100vh - 65px);
+  background: #7474bf;
+  background: -webkit-linear-gradient(to right, #348ac7, #7474bf);
+  background: linear-gradient(to right, #348ac7, #7474bf);
+
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  /* background: #7474bf;
+  background: -webkit-linear-gradient(
+    to right,
+    #348ac7,
+    #7474bf
+  ); 
+  background: linear-gradient(to right, #348ac7, #7474bf); */
+}
+
+.s1 {
+  display: flex;
+
+  height: 50px;
+  position: absolute;
+  right: 0;
+  top: 10px;
+  right: 5px;
+
+  /* position:absolute;
+    top:0;
+    right:0;
+    
+    border-radius: 10px; */
+}
+.c {
+  height: 100%;
+}
+.example-card {
+  max-width: 400px;
+  margin: 10px;
+}
+
+.side {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  border-radius: 10px;
+  margin: 2px;
+  /* padding: 0 1%; */
+}
+.am {
+  text-align: center;
+  height: 100%;
+}
+.side a:hover {
+  border-radius: 20px;
+  background: -webkit-linear-gradient(
+    to right,
+    #348ac7,
+    #7474bf
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #348ac7, #7474bf);
+  box-shadow: 0 2px 16px 3px rgba(30, 90, 90, 0.6);
+  transform: translateY(-0.5px) scale(0.99) rotateX(2deg);
+}
+.btn {
+  margin-top: 5%;
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 400;
+  max-width: 160px;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.btn:hover {
+  text-decoration: none;
+}
+
+/*btn_background*/
+.effect01 {
+  border-radius: 10px;
+  color: #fff;
+  box-shadow: 0px 0px 0px 1px #000 inset;
+  background-color: transparent;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+.effect01:hover {
+  border: 2px solid rgba(30, 90, 90, 0.5);
+  background-color: #fff;
+  box-shadow: 0px 0px 0px 4px #eee inset;
+}
+
+/*btn_text*/
+.effect01 span {
+  transition: all 0.2s ease-out;
+  z-index: 2;
+}
+.effect01:hover span {
+  letter-spacing: 0.13em;
+  color: #333;
+}
+
+/*highlight*/
+.effect01:after {
+  background: #fff;
+  border: 0px solid #000;
+  content: "";
+  height: 155px;
+  left: -75px;
+  opacity: 0.8;
+  position: absolute;
+  top: -50px;
+  -webkit-transform: rotate(35deg);
+  transform: rotate(35deg);
+  width: 50px;
+  transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1); /*easeOutCirc*/
+  z-index: 1;
+}
+.effect01:hover:after {
+  background: #fff;
+  border: 20px solid #000;
+  opacity: 0;
+  left: 120%;
+  -webkit-transform: rotate(40deg);
+  transform: rotate(40deg);
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}

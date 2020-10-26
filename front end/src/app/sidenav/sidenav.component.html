@@ -1,0 +1,56 @@
+<div class="c">
+  <mat-toolbar color="primary">
+    <mat-toolbar-row>
+      <button
+        type="button"
+        aria-label="Toggle sidenav"
+        mat-fab
+        (click)="drawer.toggle()"
+        color="accent"
+      >
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+      </button>
+      <span style="margin-left: 10px">Violence Detection System</span>
+      <div class="s1">
+        <!-- <a class="btn effect01" target="_blank" (click)="logout()"
+          ><span>Logout</span></a
+        > -->
+        <div style="padding-right: 10px; margin-top: 7px">
+          <mat-icon style="font-size: 30px">account_circle</mat-icon>
+        </div>
+        <div style="margin-top: 7px">
+          <span style="text-align: center">{{ loginname }}</span>
+        </div>
+      </div>
+    </mat-toolbar-row>
+  </mat-toolbar>
+  <mat-sidenav-container class="example">
+    <mat-sidenav class="side" #drawer mode="side" opened role="navigation">
+      <mat-nav-list>
+        <a
+          mat-list-item
+          class="btn effect01"
+          style="margin-bottom: 15px"
+          [routerLink]="['camera']"
+          >Live Feed</a
+        >
+        <a mat-list-item class="btn effect01" [routerLink]="['database']"
+          >Repository</a
+        >
+        <button
+          mat-flat-button
+          style="position: absolute; bottom: 0; width: 100%"
+          (click)="logout()"
+        >
+          Logout
+        </button>
+      </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <app-profilecard
+        *ngIf="u === 'http://localhost:4200/admin'"
+      ></app-profilecard>
+      <ng-content></ng-content>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>

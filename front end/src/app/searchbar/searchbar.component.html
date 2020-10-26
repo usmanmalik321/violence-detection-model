@@ -1,0 +1,14 @@
+<form action="" class="search-bar" (submit)="searchdata($event)">
+  <input
+    type="search"
+    name="search"
+    pattern=".*\S.*"
+    required
+    id="search1"
+    placeholder="Search by Date"
+    [(ngModel)]="uname"
+  />
+  <button class="search-btn" type="submit">
+    <span>Search</span>
+  </button>
+</form>
