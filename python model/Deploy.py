@@ -13,7 +13,7 @@ import src.data.ImageUtils as ImageUtils
 
 def PrintHelp():
     print("Usage:")
-    print("\t $(ThisScript)  $(PATH_FILE_NAME_OF_SOURCE_VIDEO)")
+    print("\t $(ThisScript)  $(PATH_FILtttttvvE_NAME_OF_SOURCE_VIDEO)")
     print()
     print("or, specified $(PATH_FILE_NAME_TO_SAVE_RESULT) to save detection result:")
     print("\t $(ThisScript)  $(PATH_FILE_NAME_OF_SOURCE_VIDEO)  $(PATH_FILE_NAME_TO_SAVE_RESULT)")
